@@ -1,0 +1,126 @@
+:root {
+    /* typography */
+    --base-text-size: 0.875rem; /* 14px */
+    --text-size-increment: 1.25;
+
+    --base-text-line-height: 1.3125rem;
+
+    --text-xs: calc(var(--base-text-size) / var(--text-size-increment));
+    --text-s: var(--base-text-size);
+    --text-m: calc(var(--text-s) * var(--text-size-increment));
+    --text-l: calc(var(--text-m) * var(--text-size-increment));
+    --text-xl: calc(var(--text-l) * var(--text-size-increment));
+    --text-2xl: calc(var(--text-xl) * var(--text-size-increment));
+    --text-3xl: calc(var(--text-2xl) * var(--text-size-increment));
+    --text-4xl: calc(var(--text-3xl) * var(--text-size-increment));
+
+    --line-height-fixed-amount: 0.35rem;
+    --line-height-relative-amount: 1.1em;
+    --globalLineHeight: calc(var(--line-height-fixed-amount) + var(--line-height-relative-amount));
+
+    --body-font-family: "Calibre", sans-serif;
+    --heading-font-family: "FuturaCondensed", "FuturaCondensedBold", serif;
+    --lato-font-family: "Lato";
+
+    --body-font-weight: 400;
+    --heading-font-weight: 900;
+
+    /* spacing */
+    --unit: 0.5rem;
+    --space-increment: 1.65;
+
+    --space-xs: calc(var(--unit) / var(--space-increment));
+    --space-s: var(--unit);
+    --space-m: calc(var(--space-s) * var(--space-increment));
+    --space-l: calc(var(--space-m) * var(--space-increment));
+    --space-xl: calc(var(--space-l) * var(--space-increment));
+    --space-2xl: calc(var(--space-xl) * var(--space-increment));
+    --space-3xl: calc(var(--space-2xl) * var(--space-increment));
+    --space-4xl: calc(var(--space-3xl) * var(--space-increment));
+
+    /* colors */
+    /* name you color with this tool: https://chir.ag/projects/name-that-color */
+
+    --color-white: #fff;
+    --color-black: #000;
+
+    --color-raisin-black: #252929;
+    --color-dove-gray: #767171;
+    --color-philippine-gray: #909090;
+    --color-bright-gray: #EEEEEE;
+    --color-anti-flash-white: #F3F3F3;
+    --color-lotion: #FBFBFB;
+    --color-zest: #E08534;
+    --color-error: #D28484;
+    --color-success: #88BEA2;
+
+    --color-1: #A0C7FD;
+    --color-2: #FFD766;
+    --color-3: #FFCCF5;
+    --color-4: #66D69B;
+    --color-5: #D2E7EC;
+
+    /* grid */
+    --grid-cols: 26;
+    --grid-col-start: 3;
+    --grid-col-end: 25;
+    --grid-col-gap: 1.312rem;
+    --grid-row-gap: 12px;
+
+    --grid-outside-gap: 2.0625rem;
+
+    --grid-col-start-short: 5;
+    --grid-col-end-short: 23;
+
+    --grid-col-start-large: 2;
+    --grid-col-end-large: 26;
+
+    --grid-cols-mobile: 22;
+    --grid-col-start-mobile: 1;
+    --grid-col-end-mobile: 23;
+    --grid-col-gap-mobile: 10px;
+
+    --grid-outside-gap-mobile: 0.8125rem;
+
+    --button-border-radius: 50px;
+
+    /* aspect-ratio */
+    --product-card-aspect-ratio: 15 / 20;
+
+    /* misc. */
+    --field-border-radius: 10px;
+    --field-border-width: 2px;
+
+    --global-transition-speed: 200ms;
+    --global-transition-speed-longer: 400ms;
+    --global-ease: cubic-bezier(0.40, 0, 0, 1);
+    --global-easeReverse: cubic-bezier(1, 0, 0, 0.40);
+    --duration-short: var(--global-transition-speed);
+    --duration-default: var(--global-transition-speed);
+    --duration-long: var(--global-transition-speed-longer);
+
+    --global-transition: all var(--global-transition-speed) var(--global-ease);
+
+    /* Shopify Dawn */
+    --font-body-scale: var(--text-s);
+    --font-heading-scale: var(--text-l);
+    
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
